@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite">
+	<parameter name="toCity" value="AMD" />
+	<parameter name="fromCity" value="DEL" />
+	<parameter name="toDate" value="11/10/2015" />
+	<parameter name="fromDate" value="11/15/2015" />
+	<parameter name="flightClass" value="Economy" />
+	<parameter name="passengers" value="2" />
+	<test verbose="2" name="Default test">
+		<classes>
+			<class name="PerfectoMaster">
+				<methods>
+					<include name="mainTest">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
